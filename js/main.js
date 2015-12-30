@@ -4,6 +4,14 @@ function main() {
 (function () {
    'use strict';
 
+  /* ==============================================
+   Disable scroll for iframe maps
+   =============================================== */
+
+  $('.maps').click(function () {
+      $('.maps iframe').css("pointer-events", "auto");
+    });
+
    /* ==============================================
   	Testimonial Slider
   	=============================================== */ 
@@ -38,7 +46,7 @@ function main() {
     Show Menu on Book
     ======================================*/
     $(window).bind('scroll', function() {
-        var navHeight = $(window).height() - 100;
+        var navHeight = $(window).height() - 500;
         if ($(window).scrollTop() > navHeight) {
             $('.navbar-default').addClass('on');
         } else {
