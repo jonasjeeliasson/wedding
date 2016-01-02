@@ -20,8 +20,14 @@ h2 {
 }
 
 h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
+}
+
+h3.dymo {
+  font-size: 30px;
+  margin: 0;
 }
 
 h5 {
@@ -173,8 +179,10 @@ hr {
 
 /* Home Style */
 header {
-  background: url(../img/header-bg.jpg) no-repeat bottom center;
-  background-size: cover;
+  background: rgba(46, 51, 56, 0);
+
+  /*background: url(../img/header-bg.jpg) no-repeat bottom center;*/
+  /*background-size: cover;*/
   color: #d9e0e2;
   position: relative;
   height: 100%;
@@ -224,9 +232,9 @@ header p {
 }
 
 /* Background Section */
-#cont {
-  background: url(../img/bg.jpg);
-  /*background-size: cover;*/
+#bg-container {
+  background: url(../img/header-bg.jpg);
+  background-size: cover;
   background-attachment: fixed;
   /*height: 150px;*/
 }
@@ -239,7 +247,7 @@ header p {
 }
 
 /* Bröllop Section */
-#services-section {
+.services-section {
   padding: 80px 0 100px 0;
   /*!* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d6dbbf+0,feffe8+25,feffe8+75,d6dbbf+100 *!*/
   /*background: rgb(214,219,191); !* Old browsers *!*/
@@ -256,7 +264,7 @@ header p {
   color: #333d45;
 }
 
-#services-section h4 {
+.services-section h4 {
   color: #81969c;
   text-transform: uppercase;
 }
@@ -265,7 +273,7 @@ header p {
   margin-top: 40px;
 }
 
-#services-section i.fa {
+.services-section i.fa {
   font-size: 20px;
   border: 0;
   /*width: 100px;*/
@@ -278,7 +286,7 @@ header p {
   transition: all 0.5s;
 }
 
-#services-section .service:hover > i.fa {
+.services-section .service:hover > i.fa {
   background: #0b3540;
 }
 
@@ -568,7 +576,6 @@ ol.type li a:hover {
 
 .team-section h4 {
   color: #81969c;
-  /*text-transform: uppercase;*/
 }
 
 .team-section hr {
@@ -577,7 +584,7 @@ ol.type li a:hover {
 
 .team-section .item {
   padding: 0;
-  margin: 15px;
+  margin: 0;
   text-align: center;
 }
 
@@ -594,15 +601,8 @@ img.img-circle.team-img {
 }
 
 .team-section .thumbnail .caption {
-  padding: 9px;
+  padding: 0;
   color: #1c424d;
-}
-
-.team-section h2.dymo i.fa {
-  font-size: 30px;
-  margin-right: 10px;
-  color: #032934;
-  background: white;
 }
 
 .team-section div.service > i.fa {
@@ -611,7 +611,6 @@ img.img-circle.team-img {
   width: 50px;
   height: 40px;
   padding: 5px 5px;
-  background: #032934;
   margin-bottom: 6px;
   border-radius: 10%;
   color: #76ada4;
@@ -800,6 +799,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 .dymo {
   font-family: "Dymo";
+  font-weight: normal;
 }
 
 .maps iframe{
@@ -829,5 +829,32 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 @media (max-width: 360px) {
   .hover-bg .hover-text {
     padding: 22% 10%;
+  }
+}
+
+p.dymo-inline {
+  font-family: 'Courier New';
+  text-transform: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+p.dymo-inline span.dymo{
+  font-size: 25px;
+  vertical-align: middle;
+  line-height: 14px
+}
+
+.vertical-aligned {
+  display: flex;
+  align-items: center;
+  margin-bottom:20px;
+}
+
+@media (min-width: 768px) {
+  .vertical-aligned-md {
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
   }
 }

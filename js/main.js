@@ -3,6 +3,7 @@ function main() {
 
 (function () {
    'use strict';
+  $('[data-toggle="tooltip"]').tooltip();
 
   /* ==============================================
    Disable scroll for iframe maps
