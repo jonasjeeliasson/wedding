@@ -37,8 +37,8 @@ h5 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  font-size: 16px;
 }
 
 a {
@@ -833,9 +833,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 
 p.dymo-inline {
-  font-family: 'Courier New';
   text-transform: none;
-  font-size: 16px;
   margin-bottom: 20px;
 }
 
