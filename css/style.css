@@ -10,7 +10,7 @@ body, html {
   font-family: 'Lato', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #1c424d;
+  color: #222;
 }
 
 h2 {
