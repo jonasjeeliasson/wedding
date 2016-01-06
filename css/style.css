@@ -17,6 +17,7 @@ h2 {
   font-family: "Dymo";
   font-size: 56px;
   margin: 0;
+  color: #222;
 }
 
 h3 {
@@ -28,6 +29,7 @@ h3 {
 h3.dymo {
   font-size: 30px;
   margin: 0;
+  color: #222;
 }
 
 h5 {
@@ -126,7 +128,7 @@ hr {
 }
 
 #menu.navbar-default {
-  background-color: rgba(46, 51, 56, 0.9);
+  background-color: rgba(4, 4, 8, 0.6);
   border-color: rgba(231, 231, 231, 0);
 }
 
@@ -150,7 +152,7 @@ hr {
 }
 
 .on {
-  background-color: #2e3338 !important;
+  background-color: #1b1e21 !important;
   padding: 5px !important;
 }
 
@@ -204,12 +206,13 @@ header p {
 
 .intro-text h2 {
   font-size: 100px;
+  color: #e8eff1;
 }
 
 .intro-text H1 {
   font-size: 70px;
   text-transform: uppercase;
-  color: #d9e0e2;
+  color: #e8eff1;
   letter-spacing: 2px;
 }
 
@@ -787,7 +790,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 /* Footer */
 #footer {
-  background: #2e3338;
+  background: #1b1e21;
   padding: 15px 0 10px 0;
   color: #628f9c;
   text-align: center;
